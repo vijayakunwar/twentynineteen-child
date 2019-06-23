@@ -1,0 +1,47 @@
+/*
+Theme Name: Twenty Nineteen Child theme
+Template: twentynineteen 
+
+*/
+
+/*referencing to the parent theme */
+/*this method should not use when there is multiple css files: 
+        According to Morten Hendrikson: 
+            performance issue mentioned using this method is negligble
+            first we try import reference and check how it perfrom 
+            in the case if it do not perform well then we use enqueue method
+*/
+@import url("../twentynineteen/style.css");
+
+/* if there is single style.css file in parent theme  use import reference */
+/*if there is multile style sheet use --> Enqueue <-- method */
+/* https://developer.wordpress.org/themes/basics/including-css-javascript/ */
+  
+body {
+    background-color: lightblue;
+}
+.site-title a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+.main-navigation > div {
+    background-color: black;
+}
+
+.main-navigation .main-menu > li > a {
+    font-weight: 700;
+    color:#add8e6;
+}
+
+@media only screen and (min-width: 768px) {
+    #colophon .widget-area .widget-column .widget-title {
+        background-color: blueviolet;
+    }
+    #colophon .widget-area .widget-column .textwidget {
+        background-color: white;
+    }
+    #colophon .widget-area .widget-column .search-form {
+        background-color: black;
+    }
+}
