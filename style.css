@@ -35,15 +35,31 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+    #colophon .widget-column {
+        background-color: coral;
+    }
     #colophon .widget-area .widget-column .widget-title {
-        background-color: blueviolet;
+        background-color: white;
     }
     #colophon .widget-area .widget-column .textwidget {
-        background-color: white;
+        background-color: navy;
     }
     #colophon .widget-area .widget-column .search-form {
         background-color: black;
     }
+    
+}
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+    #colophon .widget-column {
+        background-color: yellowgreen;
+    }
+    
 }
 
+@media only screen and (max-width: 420px) {
+    #colophon .widget-column {
+        background-color: blueviolet;
+    }
+    
+}
 /**comment added*/
